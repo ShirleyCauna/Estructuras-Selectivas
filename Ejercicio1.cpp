@@ -1,3 +1,7 @@
+// 1. Determinar si un alumno aprueba o reprueba un curso,
+// sabiendo que aprueba si su promedio de tres calificaciones es mayor o igual a 70;
+// reprueba en caso contrario.
+
 #include <iostream>
 using namespace std;
 

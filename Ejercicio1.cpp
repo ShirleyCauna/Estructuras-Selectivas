@@ -12,6 +12,12 @@ int main() {
     cout << "Ingrese tres notas: ";
     cin >> nota1 >> nota2 >> nota3;
     
+    // Validación simple para evitar números negativos
+    if (nota1 < 0 || nota2 < 0 || nota3 < 0) {
+        cout << "No se permiten notas negativas." << endl;
+        return 0; // Sale del programa sin continuar
+    }
+
     // Calcular promedio
     promedio = (nota1 + nota2 + nota3) / 3;
  

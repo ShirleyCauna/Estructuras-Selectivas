@@ -6,7 +6,10 @@ int main() {
     cout << "Ingrese un numero (1-5): ";
     cin >> numero;
 
-    if (numero == 1)
+    if (numero < 1 || numero > 5) {
+        cout << "Número fuera de rango. Debe ser entre 1 y 5." << endl;
+    }
+    else if (numero == 1)
         cout << "La vocal es: A" << endl;
     else if (numero == 2)
         cout << "La vocal es: E" << endl;
@@ -16,8 +19,6 @@ int main() {
         cout << "La vocal es: O" << endl;
     else if (numero == 5)
         cout << "La vocal es: U" << endl;
-    else
-        cout << "Número fuera de rango." << endl;
 
     return 0;
 }
